@@ -352,12 +352,15 @@ for t in range(TOTAL_TICKS):
     # update number of ticks sampled 
     queue_samples += 1
 
-print(f"total num of cars spawned: {car_id}")
-print(f"total num of cars completed: {completed}")
-print(f"cars still driving: {car_id - completed}")
 
-# TO DO: report w data
+# TO DO: report
 
-
+print(f"size: {N}x{N}")
+print(f"duration: {TOTAL_TICKS}")
+print(f"throughput: {completed/TOTAL_TICKS}")
+print(f"arrival rate: {ARRIVAL_RATE}")
+print(f"total num of trips completed: {queue_samples}")
+print(f"mean travel time: {sum_tt/completed}")
+print(f"mean num of queues vehicles: {sum_queue/max(1, queue_samples)}")
 
 
