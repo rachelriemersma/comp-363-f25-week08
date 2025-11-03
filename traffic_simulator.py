@@ -357,9 +357,11 @@ for t in range(TOTAL_TICKS):
 
 print(f"size: {N}x{N}")
 print(f"duration: {TOTAL_TICKS}")
+print(f"light cycle (NS): {CYCLE_NS_GREEN}")
+print(f"light cycle (EW): {CYCLE_EW_GREEN}")
 print(f"throughput: {completed/TOTAL_TICKS}")
 print(f"arrival rate: {ARRIVAL_RATE}")
-print(f"total num of trips completed: {queue_samples}")
+print(f"total num of trips completed: {completed}")
 print(f"mean travel time: {sum_tt/completed}")
 print(f"mean num of queues vehicles: {sum_queue/max(1, queue_samples)}")
 
